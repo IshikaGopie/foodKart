@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			background: url("https://cdn.pixabay.com/photo/2016/03/27/22/44/fresh-1284562_960_720.jpg") no-repeat;
+			background-size: cover;
+			height: 100vh;
+		}
+
+		.sidenav{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.sidenav a{
+			display: block;
+			text-decoration: none;
+			background: #fff;
+			padding: 55px 20px 55px 50px;
+			margin: 5px 0;
+			width: 150px;
+			box-shadow: 2px 2px 5px 0px rgb(0,0,0);
+			position: relative;
+			color: #051D41;
+			text-align: left;
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: -160px;
+			transition: 0.5s;
+		}
+
+
+
+		.sidenav a span{
+			float: right;
+			width: 60px;
+			height: 100%;
+			line-height: 120px;
+			font-size: 30px;
+			text-align: center;
+			color: #fff;
+			background: #051D41;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.sidenav a:hover{
+			margin-left: 0;
+		}
+
+		.login-button{
+			position: absolute;
+			right: 7%;
+			top: 2%;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 20px;
+			border-style: solid;
+			border-radius: 20px;
+			padding: 8px;
+			border-color: #fff;
+			border-width: 1px;
+			letter-spacing: 2px;
+			background: rgb(0,0,0,0.3);
+		}
+
+		.login-button:hover{
+			background: rgb(0,0,0,0.5);
+		}
+
+		.logo{
+			color: #fff;
+			position: absolute;
+			left: 1%;
+			top: 1%;
+			text-shadow: 2px 2px rgb(0,0,0)
+		}
+
+		.logo h1{
+			font-size: 20px;
+		}
+
+		.logo span{
+			font-size: 40px;
+		}
+
+		.info{
+			background: rgb(0,0,0,0.5);
+			color: #fff;
+			position: fixed;
+			width: 50%;
+			top: 15%;
+			left: 25%;
+			padding: 15px;
+			height: 60%;
+			box-shadow: 2px 2px 5px rgb(0,0,0);
+			border-radius: 15px;
+		}
+
+		.info h2{
+			text-align: center;
+			font-size: 50px;
+			padding: 10px;
+		}
+
+		.info p{
+			font-size: 30px;
+			text-align: center;
+			padding: 50px;
+
+
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<title>About</title>
+</head>
+<body>
+
+<header>
+<a href="/login" class="login-button"><span>Log In</span></a>
+</header>
+<div class="sidenav">
+<a href="/home">Home<span><i class="fas fa-home"></i></span></a>
+<a href="/myRecipes">My Recipes<span><i class="fas fa-utensils"></i></span></a>
+<a href="/mylist">Grocery List<span><i class="fas fa-shopping-cart"></i></span></a>
+<a href="/about">About<span><i class="fas fa-info-circle"></i></span></a>
+</div>
+
+<div class="logo">
+<h1><span>F</span>ood<span>K</span>art<i class="fab fa-opencart"></i></span></h1>
+</div>
+
+<div class="info">
+<h2>About FoodKart</h2>
+<p> This website allows you to search for recipes and ingredients. You can add ingredients on to your grocery lists, cross out and delete when the item has been bought.
+The aim of our website is to allow you, the user, to make buying groceries easier and more organized.</p>
+</div>
+
+
+</body>
+</html>

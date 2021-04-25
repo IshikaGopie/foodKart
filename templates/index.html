@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			background: url("https://cdn.pixabay.com/photo/2017/02/15/10/39/salad-2068220_960_720.jpg") no-repeat;
+			background-size: cover;
+			height: 100vh;
+		}
+
+		.sidenav{
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.sidenav a{
+			display: block;
+			text-decoration: none;
+			background: #ffefe6;
+			padding: 55px 20px 55px 50px;
+			margin: 5px 0;
+			width: 150px;
+			box-shadow: 2px 2px 5px 0px rgb(0,0,0);
+			position: relative;
+			color: #051D41;
+			text-align: left;
+			font-weight: bold;
+			font-size: 20px;
+			margin-left: -160px;
+			transition: 0.5s;
+		}
+
+
+
+		.sidenav a span{
+			float: right;
+			width: 60px;
+			height: 100%;
+			line-height: 120px;
+			font-size: 30px;
+			text-align: center;
+			color: #fff;
+			background: #051D41;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.sidenav a:hover{
+			margin-left: 0;
+		}
+
+		.search-bar{
+			
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			max-width: 500px;
+			width: 100%;
+			background: rgb(0,0,0,0.4);
+			display: flex;
+			border-radius: 20px;
+			padding: 10px;
+		}
+
+		.search-bar .info{
+			width: 85%;
+			border: none;
+			padding: 15px 20px;
+			font-weight: bold;
+			border-radius: 20px;
+		}
+
+		.search-button{
+			width: 10%;
+			background: #051D41;
+			position: relative;
+			cursor: pointer;
+			border-radius: 10px;
+			padding: 15px;
+		}
+
+		.search-button .fas{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			
+		}
+
+		.login-button{
+			position: absolute;
+			right: 7%;
+			top: 2%;
+			color: #fff;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 20px;
+			border-style: solid;
+			border-radius: 20px;
+			padding: 8px;
+			border-color: #fff;
+			border-width: 1px;
+			letter-spacing: 2px;
+			background: rgb(0,0,0,0.3);
+		}
+
+		.login-button:hover{
+			background: rgb(0,0,0,0.5);
+		}
+
+		.logo{
+			color: #fff;
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			top: 30%;
+			text-shadow: 2px 2px rgb(0,0,0)
+		}
+
+		.logo h1{
+			font-size: 70px;
+		}
+
+		.logo span{
+			font-size: 100px;
+		}
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<title>Food Kart</title>
+</head>
+<body>
+<header>
+<a href="/login" class="login-button"><span>Log In</span></a>
+</header>
+<div class="sidenav">
+<a href="/home">Home<span><i class="fas fa-home"></i></span></a>
+<a href="/myRecipes">My Recipes<span><i class="fas fa-utensils"></i></span></a>
+<a href="/mylist">Grocery List<span><i class="fas fa-shopping-cart"></i></span></a>
+<a href="/about">About<span><i class="fas fa-info-circle"></i></span></a>
+</div>
+
+<div class="logo">
+<h1><span>F</span>ood<span>K</span>art<i class="fab fa-opencart"></i></span></h1>
+</div>
+
+
+<div class="search-bar">
+<input id="search" type="text" class="info" placeholder="Search">
+<div class="search-button" >
+<i class="fas fa-search"></i>
+</div>
+</div> 
+<div id="output"></div>
+<a herf="" id="sourceLink"></a>
+
+</body>
+</html>
